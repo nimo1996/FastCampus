@@ -14,7 +14,7 @@ dependencies {
 repositories {
 //  mavenCentral()
     maven {
-        url "http://<Nexus Private IP>:8081/repository/<nexus artifact repository Name>"
+        url "http://1923168.122.60:8081/repository/<nexus artifact repository Name>"
         allowInsecureProtocol true
     }
 
@@ -43,7 +43,7 @@ jib {
         image = 'adoptopenjdk/openjdk11:alpine-jre'
     }
     to {
-        image = '<AWS ECR URL>/<Image Repository Name>'
+        image = '596108300355.dkr.ecr.ap-northeast-1.amazonaws.com/test'
         tags = ['<Image Tag Name>']
     }
     container {
